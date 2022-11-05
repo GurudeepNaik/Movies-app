@@ -1,0 +1,78 @@
+.image {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+body{
+    background: brown;
+}
+.App {
+    width: 98vw;
+    height: 97vh;
+}
+.heading {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.heading > h1,.favorite > h1 {
+    font-size: 50px;
+    color: aliceblue;
+    opacity: 0.8;
+    font-family: fangsong;
+    font-weight: 900;
+}
+.search > input[type="text"] {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: aliceblue;
+    background: cadetblue;
+    text-align: center;
+}
+.search > input[type="text"]:focus-visible {
+    outline:none;
+}
+.search > button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+.card{
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card:hover > .fav{
+    z-index: 100;
+}
+.fav {
+    transition: all .3s ease-in-out;
+    position: absolute;
+    bottom: 10px;
+    width: 80%;
+    text-align: center;
+    z-index: -1;
+    color: aliceblue;
+    background: rgb(18, 34, 2);
+    margin: 0 20px;
+    border-radius: 10px;
+}
+.favorite > h1{
+    text-align: center;
+}
+.favorite {
+    padding-bottom: 50px;
+}
